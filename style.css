@@ -1,0 +1,121 @@
+*{
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  color:white;
+}
+
+.shade, .clouds{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:0;
+}
+
+.shade{
+  background-color:rgba(0,0,0,0.2);
+}
+
+.clouds{
+  background-image:url('./clouds.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+}
+
+body *{
+  z-index:1;
+}
+
+body{
+  overflow:hidden;
+  font-family:"Gotham", "Avenir Next", "Avenir", "Helvetica", "Arial", sans-serif;
+  background-image:linear-gradient(#FFD06B, #F39A6C, #A46E63, #725269, #1A2040);
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+h1{
+  font-size:40px;
+  text-transform:uppercase;
+  font-weight:600;
+  width:400px;
+  text-align:center;
+  margin:40px auto;
+  letter-spacing:3px;
+  position:relative;
+}
+h1 strong{
+  font-weight:600;
+  font-size:90px;
+  text-align:center;
+}
+h2{
+  text-align:center;
+  font-size:24px;
+  font-weight:400;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+}
+
+.image-wrap{
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-100px;
+  width:200px;
+  height:auto;
+  transition:top 6s ease, left 5s ease-in, transform 5s ease-in;
+}
+
+.image-frame{
+  width:200px;
+  height:200px;
+  border-radius:100px;
+  background-size:cover;
+  overflow:hidden;
+  margin-bottom:20px;
+  border:8px solid #FFD06B;
+}
+
+.image{
+  width:100%;
+  height:auto;
+}
+
+.caption{
+  width:800px;
+  position:absolute;
+  left:50%;
+  top:100%;
+  margin-left:-400px;
+  white-space:nowrap;
+  text-align:center;
+  font-family:"Bodoni 72", serif;
+  font-size:48px;
+  line-height:36px;
+}
+
+.caption em{
+  font-size:24px;
+}
+
+.flash{
+  width:80px;
+  height:80px;
+  position:absolute;
+  margin-left:-40px;
+  top:90px;
+  transition:transform 600ms;
+}
